@@ -1,4 +1,5 @@
 import { ArchiveIcon } from "lucide-react";
+import { Section } from "@/components/section";
 
 export default function Home() {
   return (
@@ -6,23 +7,23 @@ export default function Home() {
       <div />
 
       <main className="grid grid-cols-4 gap-5 flex-1 items-stretch">
-        <div className="bg-navy-800 rounded-xl border-[0.5px] border-navy-500 pt-3 flex flex-col gap-1">
+        <Section.Root>
           {/* Header */}
-          <div className="flex items-center justify-between px-3">
-            <span className="bg-navy-700 rounded-lg px-3 py-1.5 flex items-center gap-2 text-xs">
+          <Section.Header>
+            <Section.Title>
               <ArchiveIcon className="size-3" />
               Backlog
-            </span>
-            <span className="text-xs text-navy-200">16</span>
-          </div>
+            </Section.Title>
+            <Section.IssueCount>16</Section.IssueCount>
+          </Section.Header>
 
           {/* Content */}
-          <div className="flex flex-col gap-2.5 overflow-y-auto p-3">
+          <Section.Content>
             <div>card 1</div>
             <div>card 2</div>
             <div>card 3</div>
-          </div>
-        </div>
+          </Section.Content>
+        </Section.Root>
 
       </main >
     </div >
