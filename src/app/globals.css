@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@layer base {
+  *,
+  ::after,
+  ::before {
+    border-color: transparent;
+  }
+}
+
 @theme {
   --color-navy-950: #16161d;
   --color-navy-900: #171821;
