@@ -20,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={interFont.className}>
-      <body className="bg-navy-950 text-navy-50 antialiased">
+      <body
+        className="bg-navy-950 text-navy-50 antialiased"
+        cz-shortcut-listen="true"
+      >
         <NuqsAdapter>
           {children}
         </NuqsAdapter>
